@@ -2,31 +2,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_above="@+id/listView"
+    android:id="@+id/titleView">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/courseId"
         android:layout_weight="30"
-        android:gravity="left"
+        android:padding="@dimen/general_padding"
+        android:text="@string/idTitle"
         android:textColor="@color/defaultText"
-        android:padding="@dimen/general_padding"/>
+        android:id="@+id/idTitle"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/courseName"
-        android:textColor="@color/defaultText"
         android:layout_weight="50"
-        android:paddingLeft="@dimen/general_padding"/>
+        android:textColor="@color/defaultText"
+        android:paddingLeft="@dimen/general_padding"
+        android:text="@string/nameTitle"
+        android:id="@+id/nameTitle"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/defaultText"
-        android:gravity="right"
-        android:id="@+id/courseGrade"
         android:layout_weight="20"
-        android:paddingLeft ="@dimen/general_padding"
-        android:paddingRight="20dp"/>
+        android:textColor="@color/defaultText"
+        android:paddingLeft="@dimen/general_padding"
+        android:text="@string/gradeTitle"
+        android:id="@+id/gradeTitle"/>
 
 </LinearLayout>

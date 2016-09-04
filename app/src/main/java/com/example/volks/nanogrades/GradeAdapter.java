@@ -30,16 +30,20 @@ public class GradeAdapter extends ArrayAdapter<Grade>
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.grades_list, parent, false);
         }
 
+        /** Sets Course ID TextView text*/
         TextView idTextView = (TextView) listItemView.findViewById(R.id.courseId);
         idTextView.setText(currentGrade.getCourseId());
 
+        /** Sets Course Name TextView Text*/
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.courseName);
         nameTextView.setText(currentGrade.getCourseName());
 
+        /** Sets Grade TextView Text*/
         TextView gradeTextView = (TextView) listItemView.findViewById(R.id.courseGrade);
         gradeTextView.setText(currentGrade.getGrade());
 
 
         return listItemView;
     }
+
 }

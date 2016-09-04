@@ -1,3 +1,73 @@
 <resources>
     <string name="app_name">NanoGrades</string>
+    <string name="idTitle">Course ID</string>
+    <string name="nameTitle">Course Name</string>
+    <string name="gradeTitle">Final Grade</string>
+
+    <string-array name="courseIDs">
+        <item>CDF001</item>
+        <item>CDF021</item>
+        <item>CDF021</item>
+        <item>CDF031</item>
+        <item>CDF041</item>
+        <item>CDF051</item>
+        <item>CDF004</item>
+        <item>CDF002</item>
+        <item>CDF011</item>
+        <item>CDF012</item>
+        <item>CDF014</item>
+        <item>CDF023</item>
+        <item>CD0014</item>
+        <item>CDD023</item>
+        <item>CDD001</item>
+        <item>CDE001</item>
+        <item>CDT001</item>
+        <item>CDG001</item>
+        <item>CDH021</item>
+        <item>CDH011</item>
+        <item>CDH041</item>
+        <item>CDH051</item>
+        <item>CDB021</item>
+        <item>CDB121</item>
+        <item>CDN101</item>
+        <item>CDV401</item>
+        <item>CDC601</item>
+        <item>CDX401</item>
+        <item>CDBF11</item>
+        <item>CDBE31</item>
+    </string-array>
+
+    <string-array name="CourseNames">
+        <item>Calculus 01</item>
+        <item>Advanced Algebra</item>
+        <item>Cooking 101</item>
+        <item>Complex Algorithms</item>
+        <item>English</item>
+        <item>Literature: Greece</item>
+        <item>Ancient History</item>
+        <item>Contemporary Music</item>
+        <item>DND Basics</item>
+        <item>PRO MLG Training</item>
+        <item>Art</item>
+        <item>Pottery</item>
+        <item>Basic Spanish</item>
+        <item>Metal Casting</item>
+        <item>Bronze Working</item>
+        <item>Game Coding</item>
+        <item>Python 101</item>
+        <item>Java Basics</item>
+        <item>Organic Chemistry</item>
+        <item>Physics 101</item>
+        <item>History Of Spain</item>
+        <item>Early Development</item>
+        <item>AutoTech 01</item>
+        <item>AutoTech 02</item>
+        <item>Plumbing</item>
+        <item>History</item>
+        <item>Gemran 01</item>
+        <item>Russian Lit</item>
+        <item>Japanese Animation</item>
+        <item>History of Japan</item>
+    </string-array>
+
 </resources>
