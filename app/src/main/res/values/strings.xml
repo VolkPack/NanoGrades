@@ -3,6 +3,8 @@
     <string name="idTitle">Course ID</string>
     <string name="nameTitle">Course Name</string>
     <string name="gradeTitle">Final Grade</string>
+    <string name="id">Student ID:</string>
+    <string name="proceed">Proceed</string>
 
     <string-array name="courseIDs">
         <item>CDF001</item>

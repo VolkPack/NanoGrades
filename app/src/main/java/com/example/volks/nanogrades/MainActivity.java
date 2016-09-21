@@ -1,9 +1,13 @@
 package com.example.volks.nanogrades;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -14,8 +18,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent intent = getIntent();
+        String studentId = intent.getStringExtra("STUDENT_ID");
+
 
         ArrayList<Grade> courseList =  new ArrayList<Grade>();
+
         /** Gets a List of Course IDs from XML resources*/
         String[] courseId = getResources().getStringArray(R.array.courseIDs);
         /** Gets a List of Course Names from XML resources*/
@@ -30,11 +38,13 @@ public class MainActivity extends AppCompatActivity {
         GradeAdapter gradeAdapter = new GradeAdapter(this, courseList);
         /** Creates a Title Header for the Grades using Title_bar layout*/
         View titles = getLayoutInflater().inflate(R.layout.title_bar, null);
+        TextView textView = (TextView)titles.findViewById(R.id.id_text);
 
         ListView listView = (ListView) findViewById(R.id.listView);
         listView.addHeaderView(titles);
 
         listView.setAdapter(gradeAdapter);
+        textView.setText(studentId);
     }
 
     /**
